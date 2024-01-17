@@ -4,8 +4,7 @@ body{
 
 table{
     position: relative;
-    /* height: 50px; */
-    width: 50px;
+    width: 30px;
     margin-top: 7vh;
     background-color: black;
     padding: 30px;
