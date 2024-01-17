@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script src="script.js"></script>
+</head>
+<body align="center">
+    <main class="calci-body">
+        <table align="center">
+            <tr><td colspan="4"><div class="calci-display">
+                <input type="text" readonly placeholder="0" id="display">
+            </div></td></tr>
+            <tr>
+                <td>
+                    <input type="button" class="button" value="AC" onclick="ac()">
+                </td>
+                <td>
+                    <input type="button" class="button" value="DEL" onclick="del()">
+                </td>
+                <td>
+                    <input type="button" class="button" value="%" onclick="print('%')">
+                </td>
+                <td>
+                    <input type="button" class="button" value="+" onclick="print('+')">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" class="button" value="1" onclick="print('1')">
+                </td>
+                <td>
+                    <input type="button" class="button" value="2" onclick="print('2')">
+                </td>
+                <td>
+                    <input type="button" class="button" value="3" onclick="print('3')">
+                </td>
+                <td>
+                    <input type="button" class="button" value="-" onclick="print('-')">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" class="button" value="4" onclick="print('4')">
+                </td>
+                <td>
+                    <input type="button" class="button" value="5" onclick="print('5')">
+                </td>
+                <td>
+                    <input type="button" class="button" value="6" onclick="print('6')">
+                </td>
+                <td>
+                    <input type="button" class="button" value="*" onclick="print('*')">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" class="button" value="7" onclick="print('7')">
+                </td>
+                <td>
+                    <input type="button" class="button" value="8" onclick="print('8')">
+                </td>
+                <td>
+                    <input type="button" class="button" value="9" onclick="print('9')">
+                </td>
+                <td>
+                    <input type="button" class="button" value="/" onclick="print('/')">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" class="button" value="0" onclick="print('0')">
+                </td>
+                <td>
+                    <input type="button" class="button" value="." onclick="print('.')">
+                </td>
+                <td colspan="2">
+                    <input type="button" class="button" id="equal" value=" = " onclick="calculate()">
+                </td>
+            </tr>
+        </table>
+    </main>
+</body>
+</html>
